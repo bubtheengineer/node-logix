@@ -167,7 +167,7 @@ var PLC = (function (_super) {
             };
             process.once("beforeExit", onExit);
             process.once("SIGINT", onExit);
-            if (parseInt(process.versions.node) >= 10) {
+            if (parseInt(process.versions.node) < 10) {
                 process.once("SIGKILL", onExit);
             }
         }
