@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "version": "1.0.14",
-  "name": "node-logix",
+  "name": "node-logix-plc",
   "description": "Nodejs EtherNet/IP to handle PLC as Micro820, Logix...",
   "author": "Michael Vargas",
   "module": "./build/es6/src/index.js",
