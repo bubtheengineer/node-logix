@@ -234,7 +234,7 @@ class PLC extends EIPSocketPool implements IDeviceProps {
       };
       process.once("beforeExit", onExit); // on process.exit
       process.once("SIGINT", onExit); // Ctrl + C
-      if (parseInt(process.versions.node) >= 10) {
+      if (parseInt(process.versions.node) < 10) {
         process.once("SIGKILL", onExit); // kill process
       }
     }
